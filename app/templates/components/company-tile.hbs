@@ -1,0 +1,80 @@
+{{#if isCompanyFormShowing}}
+  <div {{action 'hideModal' company}} id="modal">
+    <div id="content">
+      <form>
+        <div class="form-group">
+          <label for="name">Company name</label><br> {{input value=name id="name" placeholder="Company name goes here"}}
+        </div>
+        <div class="form-group">
+          <label for="location">Company Location</label><br> {{input value=location id="location" placeholder="Located at"}}
+        </div>
+        <div class="form-group">
+          <label for="details">Company Details</label><br> {{textarea value=details id="details" placeholder="A brief description of the company" cols=100 rows=3}}
+        </div>
+        <div class="form-group">
+          <label for="email">Email adress</label><br> {{textarea value=email id="email" placeholder="enter company email"}}
+        </div>
+        <div class="form-group">
+          <label for="senderemail">Sender Email</label><br> {{textarea row=2 cols="70" value=senderemail id="senderemail" placeholder="This will be the visible email sent in your notifications"}}
+        </div>
+        <div class="form-group">
+          <label for="Phone">Phone number</label><br> {{input value=phone type=number id="phone" placeholder="Enter company phone number"}}
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label><br> {{input value=category id="category" placeholder="e.g sports, tech"}}
+        </div>
+      </form>
+      <button {{action 'submitCompany' company}}>Submit</button>
+      <button {{action 'hideCompanyForm'}}>Cancel</button>
+    </div>
+  </div>
+{{else}}
+  <button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button>
+{{/if}}
+{{#if isSubscribeFormShowing}}
+  <div {{action 'hideModal1' subscriber}} id="modal1">
+    <div class="content">
+      <form>
+        <div class="form-group">
+          <label for="username">Name</label><br> {{input value=username id="username" placeholder="Your name goes here"}}
+        </div>
+        <div class="form-group">
+          <label for="useremail">Email address</label><br> {{textarea value=useremail id="useremail" placeholder="Your email" rows=1 cols="70"}}
+        </div>
+        <label for="userphone">Phone number</label><br> {{input type=number value=userphone id="userphone" placeholder="Your phone number"}}
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <label for="userinterest">Your Interests</label><br> {{input value=userinterest id="userinterest" placeholder="e.g sports, music etc."}}
+        </div>
+        <div class="form-group">
+          <label for="userlocation">Your Location</label><br> {{input value=userlocation id="userlocation" placeholder="Where can we find you?"}}
+        </div>
+      </form>
+      <button {{action 'submitSubscriber'}}>Submit</button>
+      <button {{action 'hideSubscribeForm'}}>Cancel</button>
+    </div>
+  </div>
+{{else}}
+  <button {{action 'showSubscribeForm'}} class="subscribeBtn">Register as subscriber</button>
+{{/if}}
+{{#if successFormShowing}}
+  <div class="showmodal">
+    <h1>Company has been successfully registered and listed below.</h1>
+  </div>
+  <button {{action 'hideSuccessForm'}}>Close</button>
+{{else}}
+{{/if}}
+
+<ul>
+  {{#each companies as |company|}}
+    <li>
+      {{#link-to 'company' company.id}}
+        <h2>{{company.name}}</h2>
+      {{/link-to}}
+      <h3>{{company.details}}.</h3>
+      <p>Located in {{company.location}} Kenya.</p>
+      <p><i>{{company.category}}.</i></p>
+    </li>
+  {{/each}}
+</ul>

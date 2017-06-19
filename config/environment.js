@@ -20,7 +20,9 @@ module.exports = function(environment) {
       apiKey: "AIzaSyCAB2tqyz9xn4qE1j4arpyUzPyLNCT9psg",
       authDomain: "notifier-7395b.firebaseapp.com",
       databaseURL: "https://notifier-7395b.firebaseio.com",
+      projectId: "notifier-7395b",
       storageBucket: "notifier-7395b.appspot.com",
+      messagingSenderId: "247515663230"
     },
 
     APP: {

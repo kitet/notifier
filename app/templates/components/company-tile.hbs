@@ -1,5 +1,3 @@
-<!--
-
 {{#if isCompanyFormShowing}}
   <div>
     <form>
@@ -56,4 +54,23 @@
   <button {{action 'hideSubscribeForm'}}>Cancel</button>
 {{else}}
   <button {{action 'showSubscribeForm'}} class="subscribeBtn">Register as subscriber</button>
-{{/if}} -->
+{{/if}}
+
+{{#if successFormShowing}}
+<div class="showmodal">
+  <h1>Company has been successfully registered and listed below.</h1>
+</div>
+<button {{action 'hideSuccessForm'}}>Close</button>
+{{else}}
+{{/if}}
+
+<ul>
+  {{#each companies as |company|}}
+    <li>
+      <h2>{{company.name}}</h2>
+      <h3>{{company.details}}.</h3>
+      <p>Located in {{company.location}} Kenya.</p>
+      <p><i>{{company.category}}.</i></p>
+    </li>
+  {{/each}}
+</ul>

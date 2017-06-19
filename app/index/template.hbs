@@ -1,1 +1,13 @@
-{{outlet}}
+<h1>NOTIFIER</h1>
+
+
+<ul>
+  {{#each model as |company|}}
+    <li>
+      <h1>{{company.name}}</h1>
+      <h2>Located in {{company.location}}</h2>
+      <p>{{company.details}}</p>
+      <p><i>{{company.category}}</i></p>
+    </li>
+  {{/each}}
+</ul>

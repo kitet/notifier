@@ -4,17 +4,24 @@ export default Ember.Component.extend({
   isCompanyFormShowing: false,
   isSubscribeFormShowing: false,
   successFormShowing: false,
+
   actions: {
     showCompanyForm() {
       this.set('isCompanyFormShowing', true);
     },
-    hideCompanyForm(){
+    hideCompanyForm() {
       this.set('isCompanyFormShowing', false);
     },
     hideSuccessForm() {
       this.set('successFormShowing', false);
     },
-
+    showSubscribeForm() {
+      this.set('isSubscribeFormShowing', true);
+      // this.set('isCompanyFormShowing', false);
+    },
+    hideSubscribeForm() {
+      this.set('isSubscribeFormShowing', false);
+    },
     submitCompany() {
       var params = {
         name: this.get('name'),

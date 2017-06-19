@@ -29,7 +29,6 @@
 {{else}}
   <button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button>
 {{/if}}
-
 {{#if isSubscribeFormShowing}}
   <div>
     <form>
@@ -55,12 +54,11 @@
 {{else}}
   <button {{action 'showSubscribeForm'}} class="subscribeBtn">Register as subscriber</button>
 {{/if}}
-
 {{#if successFormShowing}}
-<div class="showmodal">
-  <h1>Company has been successfully registered and listed below.</h1>
-</div>
-<button {{action 'hideSuccessForm'}}>Close</button>
+  <div class="showmodal">
+    <h1>Company has been successfully registered and listed below.</h1>
+  </div>
+  <button {{action 'hideSuccessForm'}}>Close</button>
 {{else}}
 {{/if}}
 

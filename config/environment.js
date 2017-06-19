@@ -16,6 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyCAB2tqyz9xn4qE1j4arpyUzPyLNCT9psg",
+      authDomain: "notifier-7395b.firebaseapp.com",
+      databaseURL: "https://notifier-7395b.firebaseio.com",
+      storageBucket: "notifier-7395b.appspot.com",
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

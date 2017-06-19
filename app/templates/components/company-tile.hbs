@@ -38,7 +38,7 @@
       <div class="form-group">
         <label for="useremail">Email address</label><br> {{textarea value=useremail id="useremail" placeholder="Your email" rows=1 cols="70"}}
       </div>
-      <label for="userphone">Phone number</label><br> {{input value=userphone id="userphone" placeholder="Your phone number"}}
+      <label for="userphone">Phone number</label><br> {{input type=number value=userphone id="userphone" placeholder="Your phone number"}}
       <div class="form-group">
       </div>
       <div class="form-group">
@@ -49,7 +49,7 @@
       </div>
     </form>
   </div>
-  <button {{action 'submitSubscibeForm'}}>Submit</button>
+  <button {{action 'submitSubscriber'}}>Submit</button>
   <button {{action 'hideSubscribeForm'}}>Cancel</button>
 {{else}}
   <button {{action 'showSubscribeForm'}} class="subscribeBtn">Register as subscriber</button>

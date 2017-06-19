@@ -22,6 +22,17 @@ export default Ember.Component.extend({
     hideSubscribeForm() {
       this.set('isSubscribeFormShowing', false);
     },
+    submitSubscriber() {
+      var params = {
+        username: this.get('username'),
+        useremail: this.get('useremail'),
+        userphone: this.get('userphone'),
+        userinterest: this.get('userinterest'),
+        userlocation: this.get('userlocation'),
+      };
+      this.set('isSubscribeFormShowing', false);
+      this.sendAction('saveSubscriber', params);
+    },
     submitCompany() {
       var params = {
         name: this.get('name'),

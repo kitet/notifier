@@ -4,8 +4,10 @@ export default DS.Model.extend({
   name:DS.attr(),
   location:DS.attr(),
   details:DS.attr(),
-  email:DS.hasMany('subscriber', { async: true }),
+  company: DS.belongsTo('company', { inverse: null }),
   senderemail:DS.attr(),
   phone:DS.attr(),
   category:DS.attr()
 });
+
+

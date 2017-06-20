@@ -25,6 +25,8 @@ module.exports = function(environment) {
       messagingSenderId: "247515663230"
     },
 
+    // torii: { sessionServiceName: 'session' },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -48,6 +50,20 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+//     ENV['simple-auth'] = {
+//   authorizer: 'simple-auth-authorizer:token'
+// };
+
+// ENV['simple-auth-token'] = {
+//   serverTokenEndpoint: '/api-token-auth/',
+//   identificationField: 'username',
+//   passwordField: 'password',
+//   tokenPropertyName: 'token',
+//   authorizationPrefix: 'Bearer ',
+//   authorizationHeaderName: 'Authorization',
+//   headers: {},
+// };
   }
 
   if (environment === 'production') {

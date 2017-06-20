@@ -1,6 +1,7 @@
 {
   "name": "notifier",
   "dependencies": {
-    "ember-simple-auth": "0.8.0"
+    "ember-simple-auth": "0.8.0",
+    "ember-uploader": "0.3.11"
   }
 }

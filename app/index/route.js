@@ -9,6 +9,7 @@ export default Ember.Route.extend({
       newCompany.save().then(function() {
         console.log("company added");
       });
+      this.transitionTo('company-profile');
     },
     saveSubscriber(params) {
       var newSubscriber = this.store.createRecord("subscriber", params);

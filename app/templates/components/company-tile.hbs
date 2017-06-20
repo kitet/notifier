@@ -1,5 +1,5 @@
 {{#if isCompanyFormShowing}}
-  <div {{action 'hideModal' company}} id="modal">
+  <div>
     <div class="content">
       <form>
         <div class="form-group">
@@ -32,7 +32,7 @@
   <button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button>
 {{/if}}
 {{#if isSubscribeFormShowing}}
-  <div {{action 'hideModal1' subscriber}} id="modal1">
+  <div>
     <div class="content">
       <form>
         <div class="form-group">
@@ -58,13 +58,13 @@
 {{else}}
   <button {{action 'showSubscribeForm'}} class="subscribeBtn">Register as subscriber</button>
 {{/if}}
-{{#if successFormShowing}}
+<!-- {{#if successFormShowing}}
   <div class="showmodal">
     <h1>Company has been successfully registered and listed below.</h1>
   </div>
   <button {{action 'hideSuccessForm'}}>Close</button>
 {{else}}
-{{/if}}
+{{/if}} -->
 
 <ul>
   {{#each companies as |company|}}
@@ -73,7 +73,7 @@
         <h2>{{company.name}}</h2>
       {{/link-to}}
       <h3>{{company.details}}.</h3>
-      <p>Located in {{company.location}} Kenya.</p>
+      <p>Located in {{company.location}}, Kenya.</p>
       <p><i>{{company.category}}.</i></p>
     </li>
     <button {{action 'subscribe'}}>Subscribe</button>

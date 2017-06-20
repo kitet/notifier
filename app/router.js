@@ -11,6 +11,7 @@ Router.map(function() {
     path: '/company/:company_id'
   });
   this.route('company-profile');
+  this.route('subscriber-profile');
 });
 
 export default Router;

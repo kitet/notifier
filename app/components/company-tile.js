@@ -45,7 +45,6 @@ export default Ember.Component.extend({
       };
       this.set('isCompanyFormShowing', false);
       this.sendAction('saveCompany', params);
-      this.set('successFormShowing', true);
     }
   }
 });

@@ -34,7 +34,7 @@
   padding: 100px;
   border: 1px solid #b30000;*/
 
-.container-fluid {
+.container-fluid {;
   padding;
   200px;
   text-align: center;
@@ -42,10 +42,10 @@
 
 .form-control {
   width: 50%;
-  margin: auto;
+  margin:auto;
 }
 
-#content {
+.content {
   text-align: center;
 }
 

@@ -25,7 +25,7 @@ module.exports = function(environment) {
       messagingSenderId: "247515663230"
     },
 
-    torii: { sessionServiceName: 'session' },
+    // torii: { sessionServiceName: 'session' },
 
     APP: {
       // Here you can pass flags/options to your application instance

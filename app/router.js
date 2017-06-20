@@ -10,7 +10,6 @@ Router.map(function() {
   this.route('company', {
     path: '/company/:company_id'
   });
-  this.route('signin');
 });
 
 export default Router;

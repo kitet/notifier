@@ -25,6 +25,20 @@ module.exports = function(environment) {
       messagingSenderId: "247515663230"
     },
 
+    ENV['simple-auth'] = {
+  authorizer: 'simple-auth-authorizer:token'
+};
+
+ENV['simple-auth-token'] = {
+  serverTokenEndpoint: '/api-token-auth/',
+  identificationField: 'username',
+  passwordField: 'password',
+  tokenPropertyName: 'token',
+  authorizationPrefix: 'Bearer ',
+  authorizationHeaderName: 'Authorization',
+  headers: {},
+};
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

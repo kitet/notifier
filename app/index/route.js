@@ -11,13 +11,15 @@ const ses=new AWS.SES({
 });
 
 export default Ember.Route.extend({
+	myData:[],
 	model(){
 		return this.store.findAll('subscriber');
 	},
 	afterModel(model){
-		model.forEach(function(item){
-			console.log(item.get('useremail'));
-		});
+		// model.forEach(function(item){
+		// 	console.log(item.get('useremail'));
+		// });
+		this.set('myData', model);
 	},
 	actions:{
 		sendNotification(){
@@ -28,6 +30,7 @@ export default Ember.Route.extend({
 				avoid timeout when company has so many subscribers
 				
 			*/
+			
 			function sendEmailFunc(sender, recipient, title, body){
 				var emailParams={
 					Destination: {ToAddresses:[recipient]},
@@ -54,7 +57,10 @@ export default Ember.Route.extend({
 			}
 			//loop through all emails and send emails to them
 			
-		
+
+			this.get('myData').forEach(function(subscriber){
+				sendEmailFunc('kitetnet@gmail.com', subscriber.get('useremail'),"test title","body test");
+			});
 
 			// var emails=['kitetnet@gmail.com', 'ktnwriter@gmail.com','ylaw8@dnsdeer.com','foughtsentertainment@gmail.com'];
 			// emails.forEach(function(email){

@@ -16,7 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    firebase:{
+      apiKey: "AIzaSyCAB2tqyz9xn4qE1j4arpyUzPyLNCT9psg",
+      authDomain: "notifier-7395b.firebaseapp.com",
+      databaseURL: "https://notifier-7395b.firebaseio.com",
+      projectId: "notifier-7395b",
+      storageBucket: "notifier-7395b.appspot.com",
+      messagingSenderId: "247515663230"
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -29,6 +36,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.aKey=process.env.accessKey;
+    ENV.sKey=process.env.secretKey;
   }
 
   if (environment === 'test') {

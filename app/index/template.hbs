@@ -1,2 +1,17 @@
-<button class='btn btn-success' {{action 'sendEmail'}}>Send Email</button>
+<div class='container'>
+<div class='row'>
+<button id='button' class='btn btn-success' {{action 'sendNotification'}}>Send Notification</button>
+<hr>
+{{#each model as |user|}}
+	{{user.useremail}}<br>
+{{/each}}
+<hr>
+</div>
+<div class='row'>
+	<div class='col-md-5'>
+		{{sign-up signUserUp='signUserUp'}}
+	</div>
+</div>
+</div>
 {{outlet}}
+

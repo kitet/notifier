@@ -39,9 +39,16 @@
   200px;
   text-align: center;
 }
-#content{
+
+.form-control {
+  width: 50%;
+  margin: auto;
+}
+
+#content {
   text-align: center;
 }
+
 
 /*#content {
   background-color: #fefefe;

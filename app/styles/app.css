@@ -34,7 +34,8 @@
   padding: 100px;
   border: 1px solid #b30000;*/
 
-.container-fluid {;
+.container-fluid {
+  ;
   padding;
   200px;
   text-align: center;
@@ -42,7 +43,11 @@
 
 .form-control {
   width: 50%;
-  margin:auto;
+  margin: auto;
+  /*border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #33bbff;*/
 }
 
 .content {

@@ -31,7 +31,7 @@
     </div>
   </div>
 {{else}}
-  <button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button>
+  <div class="registerBtn"><button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button></div>
 {{/if}}
 {{#if isSubscribeFormShowing}}
   <div {{action 'hideModal1' company}} id="modal">
@@ -59,30 +59,21 @@
     </div>
   </div>
 {{else}}
-  <button {{action 'showSubscribeForm'}} class="subscribeBtn">Register as subscriber</button>
-{{/if}}
-<!-- {{#if successFormShowing}}
-  <div class="showmodal">
-    <h1>Company has been successfully registered and listed below.</h1>
+  <div class="registerBtn">
+    <button {{action 'showSubscribeForm'}} class="subscriberBtn">Register as subscriber</button>
   </div>
-  <button {{action 'hideSuccessForm'}}>Close</button>
-{{else}}
-{{/if}} -->
-
+{{/if}}
 <ul>
-
-  <div class="companiesDiv">
-    COMPANIES
+  <div class="companiesList">
+    <h1>REGISTERED COMPANIES<hr></h1>
     {{#each companies as |company|}}
       <li>
-        {{#link-to 'company' company.id}}
-          <h2>{{company.name}}</h2>
-        {{/link-to}}
-        <h3>{{company.details}}.</h3>
+        <h2>{{#link-to 'company' company.id}}{{company.name}}    {{/link-to}}</h2>
+        <button {{action 'subscribe'}} class="subscribeBtn">Subscribe</button>
+        <h4>{{company.details}}.</h4>
         <p>Located in {{company.location}}, Kenya.</p>
-        <p><i>{{company.category}}.</i></p>
+        <p><span class="companyCategory">{{company.category}}.</span></p>
       </li>
-      <button {{action 'subscribe'}}>Subscribe</button>
     {{/each}}
   </div>
 </ul>

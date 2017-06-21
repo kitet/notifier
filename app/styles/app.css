@@ -29,7 +29,7 @@ font-family: 'Great Vibes', cursive;*/
   color: #cc5200;
   background-color: #cc5200;
   /*background: url('http://www.mirsens.com/layout/images/global/blueDust.jpg')no-repeat center center fixed;*/
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -91,7 +91,7 @@ font-family: 'Great Vibes', cursive;*/
   font-size: 17px;
   color: #cc5200;
   background-color: #cc5200;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -127,7 +127,7 @@ form {
   font-family: 'Raleway', sans-serif;
   padding: 50px;
   font-size: 16px;
-  margin-top: 470px;
+  margin-top: 0px;
   /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -172,6 +172,34 @@ form {
   color: #cc5200;
 }
 
+.companyBtn {
+  border: 0px;
+  padding: 30px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 20px;
+  background-color: #ff944d;
+}
+
+.companyBtn:hover {
+  background-color: #ff751a;
+}
+
+.subscriberBtn:hover {
+  background-color: #b34700;
+}
+
+.subscriberBtn {
+  border: 0px;
+  padding: 33px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 20px;
+  background-color: #ff944d;
+}
+
 .subscribeBtn {
   float: right;
   padding: 15px;
@@ -188,22 +216,27 @@ form {
   color: white;
 }
 
-.main {
+
+/*.main {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://d3cbihxaqsuq0s.cloudfront.net/images/44752772_xl.jp')no-repeat center center fixed;*/
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://d3cbihxaqsuq0s.cloudfront.net/images/44752772_xl.jpg')no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   -webkit-filter: contrast(120%);
-}
+}*/
 
 .registerBtn {
-  margin: 100px
-  border: 1px solid red;
-  float: left;
+  margin: 15px;
+  text-align: center;
+}
+
+.registerScb {
+  margin: 15px;
+  text-align: center;
 }
 
 .navbar-fixed-top {
@@ -219,4 +252,17 @@ form {
 
 .content {
   text-align: center;
+}
+
+.head {
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('http://images.techhive.com/images/article/2013/08/screenshot_1-100051590-orig.jpg')no-repeat center center fixed;
+  padding: 200px;
+  /*box-shadow: inset 0px 0px 150px 60px rgba(0, 0, 0, 0.8);*/
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);*/
+  text-align: center;
+  color: white;
 }

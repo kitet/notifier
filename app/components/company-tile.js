@@ -9,12 +9,12 @@ export default Ember.Component.extend({
     showCompanyForm() {
       this.set('isCompanyFormShowing', true);
     },
-    hideModal() {
-      this.set('isCompanyFormShowing', false);
-    },
-    hideModal1() {
-      this.set('isSubscribeFormShowing', false);
-    },
+    // hideModal() {
+    //   this.set('isCompanyFormShowing', false);
+    // },
+    // hideModal1() {
+    //   this.set('isSubscribeFormShowing', false);
+    // },
     hideCompanyForm() {
       this.set('isCompanyFormShowing', false);
     },

@@ -7,7 +7,10 @@ font-family: 'Courgette', cursive;
 font-family: 'Baloo Bhaina', cursive;
 font-family: 'Great Vibes', cursive;*/
 
-#modal {
+
+/* START OF ENTER COMPANY INFORMATION FORM*/
+
+#modal{
   position: fixed;
   z-index: 1;
   left: 0;
@@ -18,18 +21,6 @@ font-family: 'Great Vibes', cursive;*/
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.6);
-}
-
-form {
-  background-color: white;
-  padding: 10px;
-}
-
-#content h1, h5 {
-  color: white;
-  /*border-bottom: 1px solid #33bbff;*/
-  background-color: #cc5200;
-  padding: 3px;
 }
 
 #content {
@@ -48,7 +39,16 @@ form {
   text-align: center;
 }
 
-.submitCompany {
+#content h1, h5 {
+  color: white;
+  background-color: #cc5200;
+  padding: 3px;
+}
+
+
+/*BUTTON STYLING*/
+
+.submit {
   padding: 15px;
   margin: 5px;
   font-size: 17px;
@@ -58,7 +58,7 @@ form {
   color: #ff6600;
 }
 
-.submitCompany:hover {
+.submit:hover {
   background-color: #cc5200;
   color: white;
 }
@@ -79,6 +79,44 @@ form {
   color: white;
   border-bottom: 1px solid red;
 }
+
+
+/* END OF ENTER COMPANY INFORMATION FORM*/
+
+
+/*START OF SUBSCRIBER FORM*/
+
+#content1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #cc5200;
+  background-color: #cc5200;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 70%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+#content1 h4{
+  color: white;
+  background-color: #cc5200;
+  padding: 3px;
+}
+
+
+/*GENERAL FORM DESIGN*/
+
+form {
+  background-color: white;
+  padding: 10px;
+}
+
+
+/*GENERAL FORM DESIGN*/
 
 .companiesDiv {
   margin-top: 200px;

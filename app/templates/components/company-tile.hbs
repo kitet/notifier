@@ -24,7 +24,7 @@
         <div class="form-group">
           <label for="category">Category</label><br> {{input class="form-control" value=category id="category" placeholder="e.g sports, tech"}}
         </div>
-        <button {{action 'submitCompany' company}} class="submitCompany">Submit</button>
+        <button {{action 'submitCompany' company}} class="submit">Submit</button>
         <button {{action 'hideCompanyForm'}} class="cancel">Cancel</button>
       </form>
       <h5>&copy; notifier</h5>
@@ -34,14 +34,15 @@
   <button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button>
 {{/if}}
 {{#if isSubscribeFormShowing}}
-  <div>
-    <div class="content">
+  <div {{action 'hideModal1' company}} id="modal">
+    <div id="content1">
+      <h4>Weclome to notifier. Enter your details below.</h4>
       <form>
         <div class="form-group">
           <label for="username">Name</label><br> {{input class="form-control" value=username id="username" placeholder="Your name goes here"}}
         </div>
         <div class="form-group">
-          <label for="useremail">Email address</label><br> {{textarea class="form-control" value=useremail id="useremail" placeholder="Your email" rows=1 cols="70"}}
+          <label for="useremail">Email address</label><br> {{input class="form-control" value=useremail id="useremail" placeholder="Your email"}}
         </div>
         <label for="userphone">Phone number</label><br> {{input class="form-control" type=number value=userphone id="userphone" placeholder="Your phone number"}}
         <div class="form-group">
@@ -52,9 +53,9 @@
         <div class="form-group">
           <label for="userlocation">Your Location</label><br> {{input class="form-control" value=userlocation id="userlocation" placeholder="Where can we find you?"}}
         </div>
+        <button {{action 'submitSubscriber'}} class="submit">Submit</button>
+        <button {{action 'hideSubscribeForm'}} class="cancel">Cancel</button>
       </form>
-      <button {{action 'submitSubscriber'}}>Submit</button>
-      <button {{action 'hideSubscribeForm'}}>Cancel</button>
     </div>
   </div>
 {{else}}

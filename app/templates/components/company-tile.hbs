@@ -1,5 +1,5 @@
 {{#if isCompanyFormShowing}}
-  <div {{action 'hideModal' company}} id="modal">
+  <div id="modal">
     <div id="content">
       <h1>Fill in your company Information</h1>
       <form>
@@ -34,7 +34,7 @@
   <div class="registerBtn"><button {{action 'showCompanyForm'}} class="companyBtn">Register Your Company</button></div>
 {{/if}}
 {{#if isSubscribeFormShowing}}
-  <div {{action 'hideModal1' company}} id="modal">
+  <div id="modal">
     <div id="content1">
       <h4>Welcome to notifier. Enter your details below.</h4>
       <form>
@@ -63,6 +63,7 @@
     <button {{action 'showSubscribeForm'}} class="subscriberBtn">Register as Subscriber</button>
   </div>
 {{/if}}
+
 <ul>
   <div class="companiesList">
     <h1>REGISTERED COMPANIES<hr></h1>

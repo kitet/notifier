@@ -1,6 +1,83 @@
-.navbar {
-  border-bottom: 1px solid #f2f2f2;
-  text-align: left;
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Courgette|Great+Vibes|Montserrat|Patua+One|Raleway');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Baloo Bhaina', cursive;
+font-family: 'Great Vibes', cursive;*/
+
+#modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+form {
+  background-color: white;
+  padding: 10px;
+}
+
+#content h1, h5 {
+  color: white;
+  /*border-bottom: 1px solid #33bbff;*/
+  background-color: #cc5200;
+  padding: 3px;
+}
+
+#content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #cc5200;
+  background-color: #cc5200;
+  /*background: url('http://www.mirsens.com/layout/images/global/blueDust.jpg')no-repeat center center fixed;*/
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 120%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.submitCompany {
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 0px;
+  background-color: white;
+  border-bottom: 1px solid #cc5200;
+  color: #ff6600;
+}
+
+.submitCompany:hover {
+  background-color: #cc5200;
+  color: white;
+}
+
+.cancel {
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 1px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  /*background-color: #33bbff;*/
+  color: black;
+}
+
+.cancel:hover {
+  background-color: red;
+  color: white;
+  border-bottom: 1px solid red;
 }
 
 .companiesDiv {
@@ -8,68 +85,18 @@
   padding: 100px;
 }
 
-
-/*#modal {
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-#modal1 {
-  position: fixed;
-  z-index: 1;
-  padding-top: 20px;
-  left: 0;
-  top: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#content {
-  text-align: center;
-  height: 200px;
-  width: 500px;
-  background: transparent;
-  padding: 100px;
-  border: 1px solid #b30000;*/
-
 .main {
   text-align: center;
-  padding: 300px;
+  padding: 200px;
   color: red;
 }
 
 .form-control {
-  width: 50%;
+  width: 90%;
   margin: auto;
-  /*border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 2px solid #33bbff;*/
+  padding: 10px;
 }
 
 .content {
   text-align: center;
 }
-
-
-/*#content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 50px;
-  border: 1px solid #b30000;
-  width: 50%;
-  height: 300px;
-  border-radius: 6px;

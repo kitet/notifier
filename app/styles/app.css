@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Courgette|Great+Vibes|Montserrat|Patua+One|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Jaldi|Ubuntu|Baloo+Bhaina|Courgette|Great+Vibes|Montserrat|Patua+One|Raleway');
 
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Patua One', cursive;
 font-family: 'Courgette', cursive;
 font-family: 'Baloo Bhaina', cursive;
-font-family: 'Great Vibes', cursive;*/
+font-family: 'Great Vibes', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Jaldi', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body {
+  overflow-x: hidden;
+}
 
 
 /* START OF ENTER COMPANY INFORMATION FORM*/
@@ -26,8 +33,8 @@ font-family: 'Great Vibes', cursive;*/
 #content {
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
-  color: #cc5200;
-  background-color: #cc5200;
+  color: #ff751a;
+  background-color: #ff751a;
   /*background: url('http://www.mirsens.com/layout/images/global/blueDust.jpg')no-repeat center center fixed;*/
   margin-top: 70px;
   margin-left: auto;
@@ -41,7 +48,7 @@ font-family: 'Great Vibes', cursive;*/
 
 #content h1, h5 {
   color: white;
-  background-color: #cc5200;
+  background-color: #ff751a;
   padding: 3px;
 }
 
@@ -54,12 +61,12 @@ font-family: 'Great Vibes', cursive;*/
   font-size: 17px;
   border: 0px;
   background-color: white;
-  border-bottom: 1px solid #cc5200;
+  border-bottom: 1px solid #ff751a;
   color: #ff6600;
 }
 
 .submit:hover {
-  background-color: #cc5200;
+  background-color: #ff751a;
   color: white;
 }
 
@@ -89,8 +96,8 @@ font-family: 'Great Vibes', cursive;*/
 #content1 {
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
-  color: #cc5200;
-  background-color: #cc5200;
+  color: #ff751a;
+  background-color: #ff751a;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -102,8 +109,8 @@ font-family: 'Great Vibes', cursive;*/
 
 #content1 h4 {
   color: white;
-  background-color: #cc5200;
-  padding: 3px;
+  background-color: #ff751a;
+  padding: 8px;
 }
 
 
@@ -152,7 +159,7 @@ form {
 
 .companiesList h1 {
   text-align: center;
-  color: #cc5200;
+  color: #ff751a;
   padding: 10px;
   font-size: 40px;
 }
@@ -168,8 +175,8 @@ form {
 }
 
 .companiesList a:hover {
-  /*border-bottom: 2px solid #cc5200;*/
-  color: #cc5200;
+  /*border-bottom: 2px solid  #ff751a;*/
+  color: #ff751a;
 }
 
 .companyBtn {
@@ -207,27 +214,14 @@ form {
   font-size: 17px;
   border: 0px;
   background-color: white;
-  border-bottom: 1px solid #cc5200;
+  border-bottom: 1px solid #ff751a;
   color: #ff6600;
 }
 
 .subscribeBtn:hover {
-  background-color: #cc5200;
+  background-color: #ff751a;
   color: white;
 }
-
-
-/*.main {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://d3cbihxaqsuq0s.cloudfront.net/images/44752772_xl.jpg')no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-filter: contrast(120%);
-}*/
 
 .registerBtn {
   margin: 15px;
@@ -240,8 +234,9 @@ form {
 }
 
 .navbar-fixed-top {
-  background: transparent;
+  background-color: black;
   border-bottom: 0px;
+  position: fixed;
 }
 
 .form-control {
@@ -265,4 +260,87 @@ form {
   -webkit-filter: contrast(120%);*/
   text-align: center;
   color: white;
+}
+
+
+/*SUBSCRIBER PROFILE*/
+
+.subscriberPortal {
+  padding: 70px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: #ff751a;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.subscriberDetails {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 50px;
+}
+
+.glyphicon-envelope {
+  font-size: 70px;
+  color: #ff751a;
+  ;
+}
+
+.subscriberCompanies h2 {
+  color: #ff751a;
+  ;
+}
+
+.subscriberCompanies {
+  border-right: 1px solid #ff751a;
+  ;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.subscriberNews {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.moreSubscriptions {
+  padding: 100px;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('https://images.pexels.com/photos/29765/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*-webkit-filter: contrast(120%);*/
+}
+
+.moreSubscriberBtn {
+  padding: 25px;
+  background-color: #ff751a;
+  ;
+  color: white;
+  text-align: center;
+  border: 0px;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.moreSubscriberBtn:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+.moreSubscriptions h3 {
+  margin-top: 50px;
+}
+
+
+/*END OF SUBSCRIBER PROFILE*/
+
+footer {
+  text-align: center;
+  background-color: #ff751a;
 }

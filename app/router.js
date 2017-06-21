@@ -12,6 +12,7 @@ Router.map(function() {
   });
   this.route('company-profile');
   this.route('subscriber-profile');
+  this.route('signin');
 });
 
 export default Router;

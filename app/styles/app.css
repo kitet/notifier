@@ -194,7 +194,7 @@ form {
 }
 
 .subscriberBtn:hover {
-  background-color: #b34700;
+  background-color: #ff6600;
 }
 
 .subscriberBtn {
@@ -213,6 +213,7 @@ form {
   margin: 5px;
   font-size: 17px;
   border: 0px;
+  border-radius: 3px;
   background-color: white;
   border-bottom: 1px solid #ff751a;
   color: #ff6600;

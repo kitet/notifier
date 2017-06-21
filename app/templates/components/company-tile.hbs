@@ -67,15 +67,19 @@
 {{/if}} -->
 
 <ul>
-  {{#each companies as |company|}}
-    <li>
-      {{#link-to 'company' company.id}}
-        <h2>{{company.name}}</h2>
-      {{/link-to}}
-      <h3>{{company.details}}.</h3>
-      <p>Located in {{company.location}}, Kenya.</p>
-      <p><i>{{company.category}}.</i></p>
-    </li>
-    <button {{action 'subscribe'}}>Subscribe</button>
-  {{/each}}
+
+  <div class="companiesDiv">
+    COMPANIES
+    {{#each companies as |company|}}
+      <li>
+        {{#link-to 'company' company.id}}
+          <h2>{{company.name}}</h2>
+        {{/link-to}}
+        <h3>{{company.details}}.</h3>
+        <p>Located in {{company.location}}, Kenya.</p>
+        <p><i>{{company.category}}.</i></p>
+      </li>
+      <button {{action 'subscribe'}}>Subscribe</button>
+    {{/each}}
+  </div>
 </ul>

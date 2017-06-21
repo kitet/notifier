@@ -3,6 +3,11 @@
   text-align: left;
 }
 
+.companiesDiv {
+  margin-top: 200px;
+  padding: 100px;
+}
+
 
 /*#modal {
   position: fixed;

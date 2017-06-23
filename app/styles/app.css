@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Jaldi|Ubuntu|Baloo+Bhaina|Courgette|Great+Vibes|Montserrat|Patua+One|Raleway');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Baloo Bhaina', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Jaldi', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+
+/*START OF NAV BAR*/
+
+.navbar-fixed-top {
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 1px solid #ff571a;
+}
+
+.navbar-container {
+  color: #ff751a;
+  padding-top: 10px;
+}
+
+.navbar-nav li {
+  padding: 10px;
+}
+
+.navbar-nav a {
+  margin: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar-nav p {
+  border-right: 2px solid #ff571a;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.navbar-nav p:hover {
+  border-right: 2px solid #ff571a;
+  border-radius: 5px;
+}
+
+.title:hover {
+  border-bottom: 2px solid #ff571a;
+  padding-bottom: 10px;
+}
+
+.title {
+  color: #ff751a;
+  margin-bottom: 0px;
+  font-size: 23px;
+}
+
+.navbar-nav {
+  width: 100%;
+  padding: 0px;
+}
+
+.navbar.navbar-fixed-top {
+  background-color: white;
+}
+
+#signout {
+  padding: 7px;
+  margin-top: 0px;
+  font-size: 22px;
+  border: 0px;
+  background-color: red;
+  color: white;
+}
+
+#signout:hover {
+  background-color: #e60000;
+  color: white;
+}
+
+#signin {
+  padding: 7px;
+  margin-top: 0px;
+  font-size: 22px;
+  border: 0px;
+  background-color: #00b300;
+  color: white;
+}
+
+#signin:hover {
+  background-color: #009900;
+  color: white;
+}
+
+
+/*END OF NAV BAR*/
+
+
+/* START OF ENTER COMPANY INFORMATION FORM*/
+
+#modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #ff751a;
+  background-color: #ff751a;
+  /*background: url('http://www.mirsens.com/layout/images/global/blueDust.jpg')no-repeat center center fixed;*/
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 60%;
+  height: 110%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#content h1, h5 {
+  color: white;
+  background-color: #ff751a;
+  padding: 3px;
+}
+
+
+/*BUTTON STYLING*/
+
+.submit {
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 0px;
+  background-color: white;
+  border-bottom: 1px solid #ff751a;
+  color: #ff6600;
+}
+
+.submit:hover {
+  background-color: #ff751a;
+  color: white;
+}
+
+.cancel {
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 1px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  /*background-color: #33bbff;*/
+  color: black;
+}
+
+.cancel:hover {
+  background-color: red;
+  color: white;
+  border-bottom: 1px solid red;
+}
+
+
+/* END OF ENTER COMPANY INFORMATION FORM*/
+
+
+/*START OF SUBSCRIBER FORM*/
+
+#content1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #ff751a;
+  background-color: #ff751a;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 70%;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#content1 h4 {
+  color: white;
+  background-color: #ff751a;
+  padding: 8px;
+}
+
+
+/*GENERAL FORM DESIGN*/
+
+form {
+  background-color: white;
+  padding: 10px;
+}
+
+.formgroup {
+  overflow: scroll;
+}
+
+
+/*GENERAL FORM DESIGN*/
+
+
+/*START OF COMPANIES LIST*/
+
+.companiesList {
+  text-align: left;
+  background-color: white;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  padding: 50px;
+  font-size: 16px;
+  margin-top: 0px;
+  /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/327533/pexels-photo-327533.jpeg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);*/
+}
+
+.companiesList li {
+  border-bottom: 2px solid #cceeff;
+}
+
+.companyCategory {
+  font-family: 'Patua One', cursive;
+  font-size: 20px;
+  color: #ff571a;
+}
+
+.companiesList ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.companiesList h1 {
+  text-align: center;
+  color: #ff751a;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.companiesList h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.companiesList a {
+  text-decoration: none;
+  color: #008ae6;
+}
+
+.companiesList a:hover {
+  /*border-bottom: 2px solid  #ff751a;*/
+  color: #ff751a;
+}
+
+.companyBtn {
+  border: 0px;
+  padding: 20px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 17px;
+  background-color: #ff944d;
+}
+
+.companyBtn:hover {
+  background-color: #ff751a;
+}
+
+.subscriberBtn:hover {
+  background-color: #ff6600;
+}
+
+.subscriberBtn {
+  border: 0px;
+  padding: 20px;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 17px;
+  background-color: #ff944d;
+}
+
+.subscribeBtn {
+  float: right;
+  padding: 15px;
+  margin: 5px;
+  font-size: 17px;
+  border: 0px;
+  border-radius: 3px;
+  background-color: white;
+  border-bottom: 1px solid #ff751a;
+  color: #ff6600;
+}
+
+.subscribeBtn:hover {
+  background-color: #ff751a;
+  color: white;
+}
+
+.registerBtn {
+  margin: 15px;
+  text-align: center;
+}
+
+.registerScb {
+  margin: 15px;
+  text-align: center;
+}
+
+
+/*
+.navbar-fixed-top {
+  border-bottom: 0px;
+  position: fixed;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}*/
+
+.form-control {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.content {
+  text-align: center;
+}
+
+.head {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://cdn0.vox-cdn.com/uploads/chorus_asset/file/4206981/20151025-one-plus-x-hands-on-10.0.jpg')no-repeat center;
+  padding: 0px;
+  height: 600px;
+  /*box-shadow: inset 0px 0px 150px 60px rgba(0, 0, 0, 0.8);*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);
+  text-align: center;
+  color: white;
+  font-family: 'Jaldi', sans-serif;
+}
+
+#headercontent {
+  margin-top: 200px;
+}
+
+.head h1 {
+  font-size: 90px;
+}
+
+.head p {
+  font-size: 30px;
+}
+
+
+/*SUBSCRIBER PROFILE*/
+
+.subscriberPortal {
+  padding: 100px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: #ff751a;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.subscriberDetails {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 70px;
+  height: 600px;
+}
+
+.glyphicon-envelope {
+  font-size: 70px;
+  color: #ff751a;
+}
+
+.subscriberCompanies h2 {
+  color: #ff751a;
+}
+
+.subscriberCompanies {
+  border-right: 1px solid #ff751a;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.subscriberNews {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.moreSubscriptions {
+  padding: 100px;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('https://images.pexels.com/photos/29765/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);
+}
+
+.moreSubscriberBtn {
+  padding: 25px;
+  background-color: #ff751a;
+  color: white;
+  text-align: center;
+  border: 0px;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.moreSubscriberBtn:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+.moreSubscriptions h4 {
+  margin-top: 20px;
+}
+
+
+/*END OF SUBSCRIBER PROFILE*/
+
+
+/*START OF COMPANY PROFILE*/
+
+.companyHeader {
+  height: 200px;
+  padding: 100px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  color: white;
+  background-color: #ff751a;
+}
+
+.sendNewsForm {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  border-right: 2px solid #f2f2f2;
+  color: black;
+  margin-bottom: 20px;
+  /*background-color: #ff751a;*/
+}
+
+.sendNewsForm {
+  background-color: #ff751a;
+  color: white;
+  padding: 0px;
+  border: 1px solid #ff751a;
+  border-radius: 6px;
+}
+
+.sendNewsForm h1 {
+  color: white;
+}
+
+.sendNewsForm h3 {
+  color: white;
+  padding: 0px;
+}
+
+.sendform {
+  color: #4d4d4d;
+}
+
+.companyin4 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.glyphicon-user {
+  color: #ff751a;
+  font-size: 70px;
+}
+
+.subscriberNo {
+  font-size: 30px;
+  color: #33bbff;
+}
+
+.companyform {
+  color: #666666;
+}
+
+.companyInfo {
+  margin-top: 30px;
+}
+
+#submit {
+  padding: 10px;
+  color: white;
+  background-color: #ff751a;
+  border: 0px;
+  border-radius: 3px;
+}
+
+
+/*END OF COMPANY PROFILE*/
+
+footer {
+  text-align: center;
+  background-color: #ff751a;
+}
+
+.signin {
+  padding: 200px;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/163130/keyboard-black-notebook-input-163130.jpeg?w=940&h=650&auto=compress&cs=tinysrgb')no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: contrast(120%);
+}
+
+.signinCompany {
+  text-align: center;
+}
+
+.signinCompany .form-control {
+  width: 50%;
+}
+
+.signinUser .form-control {
+  width: 50%;
+}
+
+.signinUser {
+  text-align: center;
+}
+
+.signIn {
+  border: 1px solid #f2f2f2;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.signIn h1 {
+  color: #ff751a;
+}
+
+#signIn {
+  padding: 10px;
+  color: ;
+  border: 0px;
+  border-radius: 4px;
+  background-color: #ff751a;
+}
+
+#signIn:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+.top {
+  font-family: 'Montserrat', sans-serif;
+  padding: 50px;
+  margin-top: 50px;
+  font-size: 18px;
+  background-color: white;
+}
+
+.top h3 {
+  color: #ff751a;
+}
+
+.num {
+  color: #ff751a;
+  font-size: 20px;
+}

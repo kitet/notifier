@@ -1,0 +1,27 @@
+{{#if checkerLoggedUser.issubscribe}}
+<hr>
+<hr>
+<hr>
+<hr>
+<p class='text-danger'>You need to sign in as a company to view company portal</p>
+{{else}}
+<div class="container-fluid companyHeader">
+  ADMIN PAGE
+</div>
+<div class="container companyInfo">
+  <div class="row">
+    <div class="col-md-6 sendNewsForm">
+      <h2>Send notifications to your subscribers</h2>
+      <div>
+        {{notification-form sendN='sendN'}}
+      </div>
+      <h4>company name</h4>
+    </div>
+    <div class="col-md-6 companyin4">
+      <h1>Company Information</h1>
+      <h4><span class="glyphicon glyphicon-user"></span><br> Number of active subscribers: <br><span class="subscriberNo">504452</span></h4>
+      <h4><span class="glyphicon glyphicon-envelope"></span> <br>Total notifications sent: <br><span class="subscriberNo">1223423</span></h4>
+    </div>
+  </div>
+</div>
+{{/if}}

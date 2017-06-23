@@ -1,0 +1,27 @@
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid navbar-container">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li>
+          {{#link-to 'index'}}<span class="title">Home</span>{{/link-to}}
+        </li>
+        {{#if session.isAuthenticated}}
+          <button class='btn btn-default navbar-btn pull-right' id="signout" {{action 'signOut'}}>Sign Out</button>
+          <li>
+            {{#link-to 'subscriber-profile'}}<span class="title">Subscriber Profile</span>{{/link-to}}
+          </li>
+          <li>
+            {{#link-to 'company-profile'}}<span class="title">Company Profile</span>{{/link-to}}
+          </li>
+          <li>
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signed in as {{session.currentUser.email}}</p>
+          </li>
+        {{else}}
+          <button class='btn btn-default navbar-btn pull-right' id="signin" {{action 'signIn'}}>Sign In</button>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{{outlet}}

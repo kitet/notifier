@@ -1,0 +1,6 @@
+<form class="form-group">
+	<h1>Are you a subscriber?</h1>
+	<label>Subscriber Email:</label> {{input class="form-control" value=useremail id='useremail' placeholder='kompany@company.com'}}
+	<label>Password:</label> {{input class="form-control" value=userpassword type='password' id='userpassword'}}<br>
+	<button {{action 'signInSubscriber'}} id="signIn">Sign In</button>
+</form>

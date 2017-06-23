@@ -1,0 +1,21 @@
+<div class="container top">
+  <div class="row">
+    <h1>Welcome to the {{model.name}} notification page.</h1>
+    <p>We are a {{model.details}} dedicated on sending you the best {{model.category}} news and notifications </p>
+  </div>
+  <div class="row howWork">
+    <h3><u>How our subscriptions work.</u></h3>
+    <ol>
+      <li>Sign in to notify.</li>
+      <li>Click on the subscribe button to subscibe for notifications from {{model.name}}.</li>
+    </ol>
+  </div>
+  <h3><u>Details</u></h3>
+  <p>Notifications will be sent via email or sms depending on what package you specified.</p>
+
+  <p>for the email subscribers, expect notifications from {{model.email}} whereas phone subscribers get them from {{model.phone}}.</p>
+  <h3><u>Warning</u></h3>
+  <span class="num">{{model.senderemail}}</span> and <span class="num">{{model.phone}}</span> are the official contacts of {{model.name}}. Users are advised to keep off other similar ones because they may be fake.
+  <h3><u>Schedule</u></h3>
+  <p>Notifications will be sent <span class="num">3</span> times a day, In the morning, evening and the afternoon with an exception for serious breaking news that will be notified immediately.</p>
+</div>
